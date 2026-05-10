@@ -58,14 +58,15 @@ export function Team() {
           {team.map((member, index) => (
             <div
               key={index}
-              className={`relative bg-[#1a1f26] rounded-2xl p-5 w-[200px] sm:w-[215px] border transition-colors
+              className={`relative bg-[#1a1f26] rounded-2xl p-5 w-[200px] sm:w-[215px] border transition-colors overflow-hidden
                 ${member.isFounder
                   ? "border-cyan-500/60 shadow-[0_0_20px_rgba(6,182,212,0.1)]"
                   : "border-gray-800/50 hover:border-gray-700/50"
                 }`}
             >
+              {/* Founder Badge — inside top-left */}
               {member.isFounder && (
-                <div className="absolute -top-3 right-4 z-10">
+                <div className="absolute top-3 left-3 z-10">
                   <span className="px-3 py-1 rounded-md bg-cyan-500 text-white text-[10px] font-bold tracking-wider">
                     FONDATEUR
                   </span>
@@ -73,7 +74,7 @@ export function Team() {
               )}
 
               {/* Avatar */}
-              <div className="relative w-20 h-20 mx-auto mb-4">
+              <div className="relative w-20 h-20 mx-auto mb-4 mt-2">
                 <div className="w-full h-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-600 to-slate-800 border border-gray-700/50">
                   {member.image ? (
                     <Image
