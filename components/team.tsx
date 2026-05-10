@@ -6,30 +6,35 @@ const team = [
     role: "Fondateur",
     specialty: "Backend Senior, Cloud & Infra",
     isFounder: true,
+    image: "/team/ayman.jpeg",
   },
   {
     name: "Amoura Kenza",
     role: "Co-fondatrice",
     specialty: "Big Data & IA",
     isFounder: false,
+    image: "/team/kenza.jpeg",
   },
   {
     name: "Ouissal Nari",
     role: "Co-fondatrice",
     specialty: "Big Data & IA",
     isFounder: false,
+    image: "/team/ouissal.jpeg",
   },
   {
     name: "Adam El-Araqy",
     role: "Co-fondateur",
     specialty: "Systèmes embarqués & IoT",
     isFounder: false,
+    image: "/team/adam.jpeg",
   },
   {
     name: "Abdelmajid Chantir",
     role: "Co-fondateur",
     specialty: "Systèmes embarqués & IoT",
     isFounder: false,
+    image: "/team/abdelmajid.jpeg",
   },
 ]
 
@@ -37,7 +42,6 @@ export function Team() {
   return (
     <section id="team" className="py-20 sm:py-28 bg-[#0f1419]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-xs text-cyan-400 uppercase tracking-wider font-medium">
             NOTRE EQUIPE
@@ -50,7 +54,6 @@ export function Team() {
           </p>
         </div>
 
-        {/* Team Grid */}
         <div className="flex flex-wrap justify-center gap-4 md:gap-5">
           {team.map((member, index) => (
             <div
@@ -61,7 +64,6 @@ export function Team() {
                   : "border-gray-800/50 hover:border-gray-700/50"
                 }`}
             >
-              {/* Founder Badge — top right corner */}
               {member.isFounder && (
                 <div className="absolute -top-3 right-4 z-10">
                   <span className="px-3 py-1 rounded-md bg-cyan-500 text-white text-[10px] font-bold tracking-wider">
@@ -70,16 +72,27 @@ export function Team() {
                 </div>
               )}
 
-              {/* Avatar — square rounded */}
+              {/* Avatar */}
               <div className="relative w-20 h-20 mx-auto mb-4">
-                <div className="w-full h-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-600 to-slate-800 border border-gray-700/50 flex items-center justify-center">
-                  <span className="text-2xl font-serif font-bold text-white/50">
-                    {member.name.charAt(0)}
-                  </span>
+                <div className="w-full h-full rounded-xl overflow-hidden bg-gradient-to-br from-slate-600 to-slate-800 border border-gray-700/50">
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={80}
+                      height={80}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div className="w-full h-full flex items-center justify-center">
+                      <span className="text-2xl font-serif font-bold text-white/50">
+                        {member.name.charAt(0)}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
 
-              {/* Info */}
               <div className="text-center">
                 <h3 className="font-sans font-medium text-sm text-white mb-1">
                   {member.name}
