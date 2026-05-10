@@ -9,7 +9,7 @@ const team = [
     image: "/team/ayman.jpeg",
   },
   {
-    name: "Amoura Kenza",
+    name: "Kenza Amoura",
     role: "Co-fondatrice",
     specialty: "Big Data & IA",
     isFounder: false,
