@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer"
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background space-y-[-40px]">
+    <main className="min-h-screen bg-background space-y-[-60px]">
       <Header />
       <Hero />
       <Problems />
