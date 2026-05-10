@@ -1,3 +1,5 @@
+import { Shield, FileText, Thermometer } from "lucide-react"
+
 const problems = [
   {
     icon: Shield,
