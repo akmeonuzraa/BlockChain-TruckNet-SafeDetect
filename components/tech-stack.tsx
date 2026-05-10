@@ -19,9 +19,8 @@ const techCategories = [
 
 export function TechStack() {
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section id="tech-stack" className="py-20 sm:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-xs text-primary uppercase tracking-wider font-medium">
             TECH STACK
@@ -33,8 +32,6 @@ export function TechStack() {
             Une architecture moderne, scalable et sécurisée pour les flottes de demain.
           </p>
         </div>
-
-        {/* Tech Categories — 4 columns */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {techCategories.map((category, index) => (
             <div key={index}>
