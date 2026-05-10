@@ -50,7 +50,7 @@ const modules = [
       "Historique complet de la chaîne",
     ],
     highlight: "Zéro perte de cargaison",
-    image: "/assets/banner.jpeg",
+    image: "/coldChain.png",
     imagePosition: "left" as const,
   },
 ]
