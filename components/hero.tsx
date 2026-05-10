@@ -55,7 +55,7 @@ export function Hero() {
           {"L'intelligence au coeur"}
           <br />
           <span className="text-white">du transport routier </span>
-          <span className="bg-gradient-to-r from-orange-400 via-orange-500 to-amber-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-amber-500 via-blue-400 to-blue-900 bg-clip-text text-transparent">
             au Monde
           </span>
         </h1>
