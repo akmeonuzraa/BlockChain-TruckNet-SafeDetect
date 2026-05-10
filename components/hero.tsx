@@ -51,14 +51,14 @@ export function Hero() {
         </div>
 
         {/* Main Headline */}
-        <h1 className="font-serif font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white mb-8 leading-tight">
+        <h1 className="font-serif font-extrabold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white mb-8 leading-tight">
           {"L'intelligence au coeur"}
-          <br />
-          <span className="text-white">du transport routier </span>
-          <span className="bg-gradient-to-r from-blue-500 via-blue-900 to-amber-500 bg-clip-text text-transparent">
-            au Monde
-          </span>
-        </h1>
+         <br />
+         <span className="text-white">du transport routier </span>
+         <span className="bg-gradient-to-r from-blue-500 via-blue-900 to-amber-500 bg-clip-text text-transparent">
+           au Monde
+         </span>
+       </h1>
 
         {/* Subtitle */}
         <p className="max-w-3xl mx-auto text-gray-300 text-lg sm:text-xl mb-12 leading-relaxed">
