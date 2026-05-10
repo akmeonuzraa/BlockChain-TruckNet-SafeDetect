@@ -43,12 +43,12 @@ export function Problems() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="group p-8 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
+              className="group p-5 rounded-2xl bg-card border border-border hover:border-primary/50 transition-all duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-secondary flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
-                <problem.icon className="w-6 h-6 text-muted-foreground group-hover:text-primary transition-colors" />
+              <div className="w-10 h-10 rounded-xl bg-secondary flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <problem.icon className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
-              <h3 className="font-serif font-bold text-xl text-foreground mb-3">
+              <h3 className="font-serif font-bold text-lg text-foreground mb-2">
                 {problem.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
