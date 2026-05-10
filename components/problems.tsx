@@ -1,5 +1,3 @@
-import { Shield, FileText, Thermometer } from "lucide-react"
-
 const problems = [
   {
     icon: Shield,
@@ -23,9 +21,8 @@ const problems = [
 
 export function Problems() {
   return (
-    <section className="py-20 sm:py-28 bg-background">
+    <section id="problems" className="py-20 sm:py-28 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
         <div className="text-center mb-16">
           <span className="text-xs text-primary uppercase tracking-wider font-medium">
             LE PROBLÈME
@@ -37,8 +34,6 @@ export function Problems() {
             Les flottes marocaines font face à des problèmes critiques sans solutions locales adaptées.
           </p>
         </div>
-
-        {/* Problem Cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {problems.map((problem, index) => (
             <div
