@@ -31,7 +31,7 @@ export function Contact() {
             >
               <Link href="mailto:contact@trucknet.ma" className="flex items-center gap-2">
                 <Mail size={18} />
-                contact@trucknet.ma
+                contact.trucknet@gmail.com
               </Link>
             </Button>
             <Button
