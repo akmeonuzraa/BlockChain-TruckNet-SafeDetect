@@ -8,8 +8,12 @@ const techCategories = [
     items: ["YOLOv8", "LLM Agents", "Kafka", "InfluxDB", "PostgreSQL"],
   },
   {
-    title: "STACK LOGICIEL",
-    items: ["FastAPI", "Python", "AWS Cloud", "React", "TypeScript", "TailwindCSS"],
+    title: "BACKEND",
+    items: ["FastAPI", "Python", "AWS eu-west-3"],
+  },
+  {
+    title: "FRONTEND",
+    items: ["React", "TypeScript", "TailwindCSS"],
   },
 ]
 
@@ -30,18 +34,18 @@ export function TechStack() {
           </p>
         </div>
 
-        {/* Tech Categories */}
-        <div className="space-y-12">
+        {/* Tech Categories — 4 columns */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {techCategories.map((category, index) => (
-            <div key={index} className="text-center">
-              <h3 className="text-xs text-muted-foreground uppercase tracking-wider font-medium mb-4">
+            <div key={index}>
+              <h3 className="text-xs text-primary uppercase tracking-wider font-medium mb-4">
                 {category.title}
               </h3>
-              <div className="flex flex-wrap items-center justify-center gap-3">
+              <div className="flex flex-wrap gap-2">
                 {category.items.map((item, i) => (
                   <span
                     key={i}
-                    className="px-4 py-2 rounded-full bg-secondary border border-border text-sm text-foreground hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 cursor-default"
+                    className="px-3 py-1.5 rounded-lg bg-secondary border border-border text-sm text-foreground hover:border-primary/50 hover:bg-primary/10 transition-all duration-300 cursor-default"
                   >
                     {item}
                   </span>
