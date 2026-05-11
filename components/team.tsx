@@ -30,7 +30,7 @@ const team = [
     image: "/adam.jpeg",
   },
   {
-    name: "Abdelmajid Chantir",
+    name: "Abdelmajid Chantr",
     role: "Co-fondateur",
     specialty: "Systèmes embarqués & IoT",
     isFounder: false,
