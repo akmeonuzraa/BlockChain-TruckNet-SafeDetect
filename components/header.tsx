@@ -20,14 +20,15 @@ export default function Header() {
     <header id="header">
       {/* Desktop nav */}
       <nav className="hidden md:flex items-center gap-8">
+        <link>
         {navLinks.map((link) => (
-          
-            key={link.href}
-            href={link.href}
-            className="text-sm text-blue-300 hover:text-white transition-colors"
+
+           key={link.href}           // ← parser sees attributes with no element!
+           href={link.href}
+           className="text-sm text-blue-300 hover:text-white transition-colors"
           >
-            {link.label}
-          </a>
+      </link>
+            //{link.label}
         ))}
         <Button
           asChild
