@@ -20,9 +20,8 @@ export default function Header() {
     <header id="header">
       {/* Desktop nav */}
       <nav className="hidden md:flex items-center gap-8">
-        <link
         {navLinks.map((link) => (
-
+      <link
            key={link.href}           // ← parser sees attributes with no element!
            href={link.href}
            className="text-sm text-blue-300 hover:text-white transition-colors"
