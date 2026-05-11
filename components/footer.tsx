@@ -1,12 +1,12 @@
 import Image from "next/image"
 import Link from "next/link"
 
-const footerLinks = [
+/*const footerLinks = [
   { href: "#", label: "Privacy Policy" },
   { href: "#", label: "Terms of Service" },
   { href: "#", label: "Fleet Safety" },
   { href: "#", label: "Support" },
-]
+]*/
 
 export function Footer() {
   return (
