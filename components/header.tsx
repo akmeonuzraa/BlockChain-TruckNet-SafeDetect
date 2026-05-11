@@ -7,7 +7,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "#", label: "Home" },
+  { href: "/", label: "Home" },
   { href: "#problems", label: "Problème" },
   { href: "#modules", label: "Modules" },
   { href: "#tech-stack", label: "Stack" },
@@ -33,6 +33,18 @@ const navLinks = [
   </Button>
 </nav>
 
+//L'ajout de la bascultion vers le home 
+    {navLinks.map((link) => (
+  link.href === "/" ? (
+    <Link key={link.href} href="/" className="text-sm text-blue-300 hover:text-white transition-colors">
+      {link.label}
+    </Link>
+  ) : (
+    <a key={link.href} href={link.href} className="text-sm text-blue-300 hover:text-white transition-colors">
+      {link.label}
+    </a>
+  )
+))}
 // Et dans le menu mobile :
 <nav className="flex flex-col gap-4">
   {navLinks.map((link) => (
