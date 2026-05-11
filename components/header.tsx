@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
-  { href: "/", label: "Home" },
+  { href: "#header", label: "Home" },
   { href: "#problems", label: "Problème" },
   { href: "#modules", label: "Modules" },
   { href: "#tech-stack", label: "Stack" },
@@ -17,7 +17,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header>
+    <header id="header">
       {/* Desktop nav */}
       <nav className="hidden md:flex items-center gap-8">
         {navLinks.map((link) => (
