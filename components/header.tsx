@@ -28,7 +28,7 @@ export function Header() {
               alt="TruckNet"
               width={36}
               height={36}
-              className="rounded-md"
+              className="rounded-full"
             />
             <span className="text-white font-bold text-lg">TruckNet</span>
           </Link>
