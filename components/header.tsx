@@ -49,7 +49,6 @@ export default function Header() {
             >
               {link.label}
           </Link>
-            </a>
           ))}
           <Button
             asChild
