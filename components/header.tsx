@@ -13,7 +13,7 @@ const navLinks = [
   { href: "#team", label: "Equipe" },
 ]
 
-export default function Header() {
+export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
