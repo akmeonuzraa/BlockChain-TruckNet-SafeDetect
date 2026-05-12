@@ -41,13 +41,14 @@ export default function Header() {
       {isOpen && (
         <nav className="flex flex-col gap-4">
           {navLinks.map((link) => (
-            
+          <link
               key={link.href}
               href={link.href}
               className="text-sm text-blue-300 hover:text-white transition-colors"
               onClick={() => setIsOpen(false)}
             >
               {link.label}
+          </Link>
             </a>
           ))}
           <Button
