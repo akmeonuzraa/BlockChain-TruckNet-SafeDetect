@@ -40,7 +40,7 @@ const team = [
 
 export function Team() {
   return (
-    <section id="team" className="py-20 sm:py-28 bg-[#0c529c]">
+    <section id="team" className="py-20 sm:py-28 bg-[#0a1f36]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <span className="text-xs text-cyan-400 uppercase tracking-wider font-medium">
